@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Meme Generator</title>
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="img">
+        <div id="img-canvas">
+            <canvas id="myCanvas" width="650" height="550" style="border: 1px solid black;"></canvas>
+        </div>
+
+        <div id="img-file">
+            <div>
+                <input type="file" id="imageLoader" name="imageLoader" />
+                <a href="#" download="image.png">Download Meme</a>
+            </div>
+            <div>
+                <input type="text" name="" id="topText" placeholder="Top Text">
+                <input type="number" name="" id="topFont" value="42" min="0">
+                <input type="color" name="" id="topCaptionColor" value="#FFFFFF">
+            </div>
+            <div>
+                <input type="text" name="" id="bottomText" placeholder="Bottom Text">
+                <input type="number" name="" id="bottomFont" value="42" min="0">
+                <input type="color" name="" id="bottomCaptionColor" value="#FFFFFF">
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</html>

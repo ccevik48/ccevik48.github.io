@@ -1,0 +1,39 @@
+body { margin: 0px; background-color: rgb(202, 202, 202); }
+
+input[type=number]{
+    width: 40px;
+}
+
+#myCanvas {
+    margin-top: 10px auto;
+    padding: 0px;
+    background-color: white;
+}
+
+#img {
+    width: 700px;
+    height: 700px;
+    margin: 0;
+    padding: 0;
+
+    position:absolute;
+    left:0; right:0;
+    top:0; bottom:0;
+	margin: auto;
+	
+	max-width:100%;
+	max-height:100%;
+    overflow:auto;
+    text-align: center;
+}
+#img-canvas, #img-file {
+    margin: auto;
+}
+#img-canvas {
+    margin: 10px;
+}
+
+#imageLoader, #topText, #bottomText, #topFont, #bottomFont, #topCaptionColor, #bottomCaptionColor {
+    display: inline-block;
+    margin: 5px;
+}
