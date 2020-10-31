@@ -1,0 +1,20 @@
+body {
+    background-color: #c4c4c4;
+}
+#cv {
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white
+}
+
+#Buttons {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#RandSize {
+    width: 50px;
+}
