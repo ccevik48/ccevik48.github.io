@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="shortcut icon" href="#">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="Buttons">
+        <textarea id="Input" placeholder="Place custom array as comma separated values e.g.&#10;5,4,7,2,3,8,1,6&#10;Tip: use values between 1 and 500 for best results" cols="60" rows="3"></textarea><br>
+        <input type="button" value="Upload Array" id="MyArray"/> | 
+        <select name="algos" id="algos">
+            <option value="SA">Select Algorithm</option>
+            <option value="Bubble Sort">Bubble Sort</option>
+            <option value="Quick Sort">Quick Sort</option>
+            <option value="Merge Sort">Merge Sort</option>
+            <option value="Radix Sort">Radix Sort</option>
+            <option value="Insertion Sort">Insertion Sort</option>
+        </select> | 
+        <input type="button" value="Reset" id="Start" /> | 
+        <input type="number" min="1" max="500" id="RandSize" value="12"/>
+        <input type="button" value="Random Array" id="Rand"/> | 
+        <input type="button" value="Shuffle" id="GenerateRandom"/>
+    </div>
+
+    <canvas id="cv" width="1000" height="550"></canvas>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</html>
