@@ -24,7 +24,14 @@
         <input type="button" value="Reset" id="Start" /> | 
         <input type="number" min="1" max="500" id="RandSize" value="12"/>
         <input type="button" value="Random Array" id="Rand"/> | 
-        <input type="button" value="Shuffle" id="GenerateRandom"/>
+        <input type="button" value="Shuffle" id="GenerateRandom"/> |
+        <select name="speed" id="speed">
+            <option value="Very Slow">Very Slow</option>
+            <option value="Slow">Slow</option>
+            <option value="Medium" selected>Medium</option>
+            <option value="Fast">Fast</option>
+            <option value="Very Fast">Very Fast</option>
+        </select>
     </div>
 
     <canvas id="cv" width="1000" height="550"></canvas>
