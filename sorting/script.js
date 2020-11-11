@@ -12,6 +12,8 @@ var startButton = document.querySelector('#Start')
 var randArray = document.querySelector('#Rand')
 var randSize = document.querySelector('#RandSize')
 var shuffleArr = document.querySelector('#GenerateRandom')
+var speed = document.querySelector('#speed')
+var sleepSpeed = 50
 
 
 var n = startingArray.length
@@ -45,6 +47,27 @@ randArray.addEventListener('click', () => {
     copyArray = startingArray.slice(0)
     max = n
     input.value = "SA"
+})
+speed.addEventListener('change', () => {
+    switch (speed.value) {
+        case "Very Slow":
+            sleepSpeed = 100
+            break;
+        case "Slow":
+            sleepSpeed = 75
+            break;
+        case "Medium":
+            sleepSpeed = 50
+            break;
+        case "Fast":
+            sleepSpeed = 25
+            break;
+        case "Very Fast":
+            sleepSpeed = 10
+            break;
+        default:
+            break;
+    }
 })
 
 var values
@@ -195,7 +218,7 @@ async function merge(arr, l, m, r) {
 async function mergeSort(arr, l, r) {
     if (l < r) {
         var m = Math.floor((l + r) / 2);
-        await sleep(50),
+        await sleep(sleepSpeed),
         await Promise.all([
             
             await mergeSort(arr, l, m),
@@ -246,7 +269,7 @@ async function radixBucketSort(arr) {
                 currBucket = buckets[idx2];
                 len1 = currBucket.length;
                 for (idx3 = 0; idx3 < len1; idx3++) {
-                    await sleep(50)
+                    await sleep(sleepSpeed)
                     arr[idx1++] = currBucket[idx3];
                 }
             }
@@ -267,7 +290,7 @@ async function insertionSort(inputArr) {
             j = j - 1;
         }
         inputArr[j + 1] = key;
-        await sleep(50)
+        await sleep(sleepSpeed)
     }
     // return inputArr;
 };
@@ -282,7 +305,7 @@ async function insertionSort(inputArr) {
 
 
 async function swap(array, r, j) {
-    await sleep(50);
+    await sleep(sleepSpeed);
     var temp = array[r];
     array[r] = array[j];
     array[j] = temp;
