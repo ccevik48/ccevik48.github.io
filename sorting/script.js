@@ -1,8 +1,8 @@
 var cv = document.querySelector('#cv');
 var c = cv.getContext('2d');
 var input = document.querySelector('#algos')
-var userArray = document.querySelector('#Input')
-var uploadUserArray = document.querySelector('#MyArray')
+// var userArray = document.querySelector('#Input')
+// var uploadUserArray = document.querySelector('#MyArray')
 var h = cv.height;
 var w = cv.width;
 
@@ -70,20 +70,20 @@ speed.addEventListener('change', () => {
     }
 })
 
-var values
-userArray.addEventListener('change', () => {
-    values = userArray.value.split(',');
-    for (var i = 0; i < values.length; i++) {
-        values[i] = parseInt(values[i], 10);
-    }
-})
-uploadUserArray.addEventListener('click', () => {
-    n = values.length
-    startingArray = values.slice(0)
-    copyArray = values.slice(0)
-    max = n
-    input.value = "SA"
-})
+// var values
+// userArray.addEventListener('change', () => {
+//     values = userArray.value.split(',');
+//     for (var i = 0; i < values.length; i++) {
+//         values[i] = parseInt(values[i], 10);
+//     }
+// })
+// uploadUserArray.addEventListener('click', () => {
+//     n = values.length
+//     startingArray = values.slice(0)
+//     copyArray = values.slice(0)
+//     max = n
+//     input.value = "SA"
+// })
 
 input.addEventListener('change', () => {
     switch (input.value) {
