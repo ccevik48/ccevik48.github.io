@@ -23,7 +23,7 @@ addEventListener('resize', () => {
 // addEventListener('resize', () => {
 //   clk.x = canvas.width/2
 //   clk.y = canvas.height/2
-// })
+// }) 
 
 
 
@@ -101,10 +101,10 @@ function animate() {
   requestAnimationFrame(animate)
   c.clearRect(0, 0, canvas.width, canvas.height)
 
-  var my_gradient = c.createLinearGradient(0, 0, 0, canvas.height);
-  my_gradient.addColorStop(0, "#CCE0FF");
-  my_gradient.addColorStop(1, "#0066FF");
-  c.fillStyle = my_gradient;
+  // var my_gradient = c.createLinearGradient(0, 0, 0, canvas.height);
+  // my_gradient.addColorStop(0, "#CCE0FF");
+  // my_gradient.addColorStop(1, "#0066FF");
+  c.fillStyle = "#0066FF";
   c.fillRect(0, 0, canvas.width, canvas.width);
 
   fishArr2.forEach(f => {
